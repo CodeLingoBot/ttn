@@ -43,7 +43,7 @@ func tokenFilename(name string) string {
 	return tokenFile()
 }
 
-// GetCache get's the cache that will store our tokens
+// GetTokenCache get's the cache that will store our tokens
 func GetTokenCache() cache.Cache {
 	return cache.FileCacheWithNameFn(GetDataDir(), tokenFilename)
 }

@@ -15,7 +15,7 @@ type Decoder struct {
 	result map[string]interface{}
 }
 
-// Decodes decodes the CayenneLPP payload to fields
+// Decode decodes decodes the CayenneLPP payload to fields
 func (d *Decoder) Decode(payload []byte, fPort uint8) (map[string]interface{}, bool, error) {
 	decoder := protocol.NewDecoder(bytes.NewBuffer(payload))
 	d.result = make(map[string]interface{})

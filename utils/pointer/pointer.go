@@ -116,7 +116,7 @@ func Time(v time.Time) *time.Time {
 	return p
 }
 
-// DumpStruct prints the content of a struct of pointers
+// DumpPStruct prints the content of a struct of pointers
 func DumpPStruct(s interface{}, multiline bool) string {
 	v := reflect.ValueOf(s)
 
